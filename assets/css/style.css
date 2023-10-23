@@ -39,20 +39,40 @@ h1 {
     color: brown;
 }
 
+.btn-brown:hover {
+    color: #362204;
+}
+
 .btn-yellow {
-    color: darkgoldenrod; ;
+    color: #D6B70A; ;
+}
+
+.btn-yellow:hover {
+    color: #A68E08
 }
 
 .btn-red {
     color: red;
 }
 
+.btn-red:hover {
+    color: darkred;
+}
+
 .btn-green {
     color: green;
 }
 
+.btn-green:hover {
+    color: darkgreen;
+}
+
 .btn-navy {
-    color: navy;
+    color: blue;
+}
+
+.btn-navy:hover {
+    color: navy
 }
 
 .rules {
