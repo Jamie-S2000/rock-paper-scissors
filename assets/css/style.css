@@ -22,3 +22,23 @@ body {
     background: none;
     font-size: 6rem;
 }
+
+.btn-brown {
+    color: brown;
+}
+
+.btn-yellow {
+    color: darkgoldenrod; ;
+}
+
+.btn-red {
+    color: red;
+}
+
+.btn-green {
+    color: green;
+}
+
+.btn-navy {
+    color: navy;
+}
