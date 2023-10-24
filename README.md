@@ -1,6 +1,6 @@
 # Rock Paper Scissors Lizard Spock
 This project was created to make a fun and interactive game of rock, paper, scissors, lizard, Spock. It is targeted towards anyone wanting to play the game against a computer. It is simple and easy to understand and interact with.
-The project uses Javascript to be fully interactive, keep score and to play against with random choices from the computer. The game deomnstrates how javascript can be used to create a game of chance.
+The project uses Javascript to be fully interactive, keep score and to be able to play against with random choices from the computer. The game deomnstrates how javascript can be used to create a game of chance.
 
 ![screenshot of am I interactive to show site on different screens](assets/images/readme/am-i-responcive.jpg)
 
@@ -29,7 +29,7 @@ The fonts are taken from google fonts and were chosen to reflect the fun vibe th
 
 ## Features
 
-### Existing Features
+### Current Features
 
 -__Win/Lose/Draw counter__
 * The win/lose/draw counter counts the score of the player and allows to show where they are in the game.
@@ -181,3 +181,4 @@ document.addEventListener("DOMContentLoaded", function (){
     }
 })
 ```
+
