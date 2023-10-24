@@ -6,10 +6,12 @@ body {
     text-align: center;
 }
 
+/*Header Styles*/
 h1 {
     font-size: 3em;
 }
 
+/*Game Area Styles*/
 .game {
     background-color: #d3d3d3;
     border-radius: 10px;
@@ -29,6 +31,7 @@ h1 {
     justify-content: space-evenly;
 }
 
+/*Button Styles*/
 .button {
     border: none;
     background: none;
@@ -75,6 +78,7 @@ h1 {
     color: navy
 }
 
+/*Rules Section*/
 .rules {
     background-color: #d3d3d3;
     border-radius: 10px;
@@ -83,6 +87,7 @@ h1 {
     padding: 0.5vh 8px;
 }
 
+/*Media Query for tablets and smaller*/
 @media (max-width: 768px) {
 
     h1 {
