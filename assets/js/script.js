@@ -67,10 +67,7 @@ function gameReset() {
     }
 }
 
-/**
- * Code to decide who wins
- */
-
+/*Code to decide who wins*/
 function rockPick() {
     let compChoice = computerChoice();
     if (compChoice === "rock") {
@@ -164,4 +161,3 @@ document.addEventListener("DOMContentLoaded", function (){
         })
     }
 })
-
