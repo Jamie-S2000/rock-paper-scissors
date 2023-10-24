@@ -33,6 +33,36 @@ function drawCount() {
     document.getElementById("draws-total").innerHTML = ++drawTotal;
 }
 
+function gameReset() {
+    let winsTotal = parseInt(document.getElementById("wins-total").innerText);
+    let loseTotal = parseInt(document.getElementById("lose-total").innerText);
+    let drawTotal = parseInt(document.getElementById("draws-total").innerText);
+    let gameCount = winsTotal + loseTotal + drawTotal;
+    if (gameCount >= 9) {
+        if (winsTotal == loseTotal) {
+            alert(`
+            You won ${winsTotal} times.
+            You lost ${loseTotal} times.
+            You drew ${drawTotal} times
+            Draw!`)
+        } else if (winsTotal > loseTotal) {
+            alert(`
+            You won ${winsTotal} times.
+            You lost ${loseTotal} times.
+            You drew ${drawTotal} times
+            You win!`)
+        } else if (winsTotal < loseTotal) {
+            alert(`
+            You won ${winsTotal} times.
+            You lost ${loseTotal} times.
+            You drew ${drawTotal} times
+            You lose!`)
+        }
+    document.getElementById("wins-total").innerHTML = 0
+    document.getElementById("lose-total").innerHTML = 0
+    document.getElementById("draws-total").innerHTML = 0
+    }
+}
 
 /**
  * Code to decide who wins
@@ -108,6 +138,9 @@ function spockPick() {
     }
 }
 
+/**
+ * listens for user pick
+ */
 document.addEventListener("DOMContentLoaded", function (){
     let buttons = document.getElementsByTagName("button");
 
@@ -124,6 +157,8 @@ document.addEventListener("DOMContentLoaded", function (){
             } else if (this.getAttribute("id") === "spock") {
                 spockPick();
             }
+            gameReset();
         })
     }
 })
+
