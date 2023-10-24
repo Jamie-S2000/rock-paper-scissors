@@ -39,11 +39,11 @@ h1 {
 }
 
 .btn-brown {
-    color: brown;
+    color: #614949;
 }
 
 .btn-brown:hover {
-    color: #362204;
+    color: #473636;
 }
 
 .btn-yellow {
@@ -55,11 +55,11 @@ h1 {
 }
 
 .btn-red {
-    color: red;
+    color: #a82222;
 }
 
 .btn-red:hover {
-    color: darkred;
+    color: #751717;
 }
 
 .btn-green {
@@ -71,11 +71,11 @@ h1 {
 }
 
 .btn-navy {
-    color: blue;
+    color: #2283bf;
 }
 
 .btn-navy:hover {
-    color: navy
+    color: #19408c;
 }
 
 /*Rules Section*/
