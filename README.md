@@ -70,14 +70,12 @@ In this section i will show and explain the code used to make the site interacti
 ### Computer choice
 This function was built for the computer to randomly choose one of the options.
 * It lays out the possible options (not within the function)
-* The function iterates through the options
 * picks a random number from 0 to 4 by multiplying 5 by a number between 0 and 1 then rounding down. This is given the variable i.
 * The compChoice veriable is set by finding where i sits in the options array e.g. if i = 3 then the compChoice is lizard.
 * The function return the choice.
 ```
 let options = ["rock", "paper", "scissors", "lizard", "Spock"]
 function computerChoice() {
-    for (let i = 0; i > options.length; i++);
     i = Math.floor(Math.random() * 5);
     let compChoice = options[i];
     return compChoice;
