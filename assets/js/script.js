@@ -55,7 +55,7 @@ function rockPick() {
 function paperPick() {
     let compChoice = computerChoice();
     if (compChoice === "paper") {
-        alert(`The computer chose rock. You draw!`);
+        alert(`The computer chose paper. You draw!`);
         drawCount();
     } else if (compChoice === "rock" || compChoice ===  "spock"){
         alert(`The computer chose ${compChoice}. You Win!`);
