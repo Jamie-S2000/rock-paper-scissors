@@ -59,6 +59,9 @@ There are two types of alerts in the game:
 * The second type shows users their points total at the end of a game and of they won lost or drew overall.
 ![image of the second type of alert](assets/images/readme/alert2.jpg)
 
+-__Favicon__
+The favicon is chosen as it is a video game controller.
+
 ### Future Features and Improvements
 In the future with this site I would like to add a few other features:
 * Possibly animations or an animated popup for scores and both player and user choices.
@@ -230,3 +233,5 @@ All icons were taken from https://fontawsome.com
 * Spock: https://fontawesome.com/icons/hand-spock?f=classic&s=solid
 
 The font was taken from Google Fonts: https://fonts.google.com/specimen/Josefin+Sans
+
+The favicon is from favicon.io : https://favicon.io/emoji-favicons/video-game
