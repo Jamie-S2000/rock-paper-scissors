@@ -11,13 +11,17 @@ h1 {
     font-size: 3em;
 }
 
-/*Game Area Styles*/
-.game {
+/*general styles*/
+.background {
     background-color: #d3d3d3;
     border-radius: 10px;
-    width: 50%;
+    width: auto;
     margin: 0.5vh 25%;
     padding: 0.5vh 0;
+}
+
+/*Game Area Styles*/
+.game {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -78,15 +82,6 @@ h1 {
     color: #19408c;
 }
 
-/*Rules Section*/
-.rules {
-    background-color: #d3d3d3;
-    border-radius: 10px;
-    width: auto;
-    margin: 0.5vh 25%;
-    padding: 0.5vh 8px;
-}
-
 /*Media Query for tablets and smaller*/
 @media (max-width: 768px) {
 
@@ -94,15 +89,13 @@ h1 {
         font-size: 2.5em;
     }
 
-    .game {
+    .background {
         width: auto;
         margin: 0.5vh 7.5%;
         padding: 0.5vh 0;
     }
 
     .rules {
-        width: auto;
-        margin: 0.5vh 7.5%;
         padding: 0.5vh 8px;
     }
 }
