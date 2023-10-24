@@ -192,3 +192,8 @@ The site was tested on these devices:
 Google Dev-tools were used throughout to test responsiveness. This was also used to check the Javascript code was working though the console.
 -__Testing the Game__
 On all the devices I tested wether the game ran correctly. It was tested on different browsers and different sized screens to check the game functioned properly and the sizing of everything worked.
+
+-__Validator Testing__
+The HTML and CSS was ran though the W3C Code validator, both with no issues.
+The Javascript was ran though a linter. It has some warnings which have been checked.
+
