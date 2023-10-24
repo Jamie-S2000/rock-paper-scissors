@@ -39,21 +39,71 @@ function drawCount() {
  */
 
 function rockPick() {
-
+    let compChoice = computerChoice();
+    if (compChoice === "rock") {
+        alert(`The computer chose rock. You draw!`);
+        drawCount();
+    } else if (compChoice === "scissors" || compChoice ===  "lizard"){
+        alert(`The computer chose ${compChoice}. You Win!`);
+        winCount();
+    } else if (compChoice === "paper" || compChoice ===  "spock"){
+        alert(`The computer chose ${compChoice}. You lose.`);
+        loseCount();
+    }
 }
 
 function paperPick() {
-
+    let compChoice = computerChoice();
+    if (compChoice === "paper") {
+        alert(`The computer chose rock. You draw!`);
+        drawCount();
+    } else if (compChoice === "rock" || compChoice ===  "spock"){
+        alert(`The computer chose ${compChoice}. You Win!`);
+        winCount();
+    } else if (compChoice === "scissors" || compChoice ===  "lizard"){
+        alert(`The computer chose ${compChoice}. You lose.`);
+        loseCount();
+    }
 }
 
 function scissorsPick() {
-
+    let compChoice = computerChoice();
+    if (compChoice === "scissors") {
+        alert(`The computer chose scissors. You draw!`);
+        drawCount();
+    } else if (compChoice === "paper" || compChoice ===  "lizard"){
+        alert(`The computer chose ${compChoice}. You Win!`);
+        winCount();
+    } else if (compChoice === "spock" || compChoice ===  "rock"){
+        alert(`The computer chose ${compChoice}. You lose.`);
+        loseCount();
+    }
 }
 
 function lizardPick() {
-
+    let compChoice = computerChoice();
+    if (compChoice === "lizard") {
+        alert(`The computer chose lizard. You draw!`);
+        drawCount();
+    } else if (compChoice === "spock" || compChoice ===  "paper"){
+        alert(`The computer chose ${compChoice}. You Win!`);
+        winCount();
+    } else if (compChoice === "rock" || compChoice ===  "scissors"){
+        alert(`The computer chose ${compChoice}. You lose.`);
+        loseCount();
+    }
 }
 
 function spockPick() {
-
+    let compChoice = computerChoice();
+    if (compChoice === "spock") {
+        alert(`The computer chose spock. You draw!`);
+        drawCount();
+    } else if (compChoice === "scissors" || compChoice ===  "rock"){
+        alert(`The computer chose ${compChoice}. You Win!`);
+        winCount();
+    } else if (compChoice === "paper" || compChoice ===  "lizard"){
+        alert(`The computer chose ${compChoice}. You lose.`);
+        loseCount();
+    }
 }
