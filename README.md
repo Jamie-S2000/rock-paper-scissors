@@ -182,3 +182,13 @@ document.addEventListener("DOMContentLoaded", function (){
 })
 ```
 
+## Testing
+The site was tested on these devices:
+* HP Omen with a 17" display - Chrome, Edge
+* 27" monitor - Chrome, Edge (The website was ran on the HP Omen and this was to check sizing on larger displays)
+* Samsung Galaxy S23 Ultra - Chrome, Samsung Internet
+* iPad Air - Safari
+* iPhone 13 - Safari
+Google Dev-tools were used throughout to test responsiveness. This was also used to check the Javascript code was working though the console.
+-__Testing the Game__
+On all the devices I tested wether the game ran correctly. It was tested on different browsers and different sized screens to check the game functioned properly and the sizing of everything worked.
