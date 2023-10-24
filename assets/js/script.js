@@ -42,24 +42,18 @@ function gameReset() {
     let gameCount = winsTotal + loseTotal + drawTotal;
     if (gameCount >= 9) {
         if (winsTotal == loseTotal) {
-            alert(`
-            You won ${winsTotal} times.
-            You lost ${loseTotal} times.
-            You drew ${drawTotal} times
-            Draw!`)
+            var result = "draw"
         } else if (winsTotal > loseTotal) {
-            alert(`
-            You won ${winsTotal} times.
-            You lost ${loseTotal} times.
-            You drew ${drawTotal} times
-            You win!`)
+            var result = "win"
         } else if (winsTotal < loseTotal) {
-            alert(`
-            You won ${winsTotal} times.
-            You lost ${loseTotal} times.
-            You drew ${drawTotal} times
-            You lose!`)
+            var result = "lose"
         }
+        alert(`
+        You won ${winsTotal} times.
+        You lost ${loseTotal} times.
+        You drew ${drawTotal} times
+        You ${result}!
+        `)
     document.getElementById("wins-total").innerHTML = 0
     document.getElementById("lose-total").innerHTML = 0
     document.getElementById("draws-total").innerHTML = 0
