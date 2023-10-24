@@ -228,3 +228,5 @@ All icons were taken from https://fontawsome.com
 * Scissors: https://fontawesome.com/icons/scissors?f=classic&s=solid
 * Lizard: https://fontawesome.com/icons/dragon?f=classic&s=solid
 * Spock: https://fontawesome.com/icons/hand-spock?f=classic&s=solid
+
+The font was taken from Google Fonts: https://fonts.google.com/specimen/Josefin+Sans
