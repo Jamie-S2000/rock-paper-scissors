@@ -44,6 +44,7 @@ The fonts are taken from google fonts and were chosen to reflect the fun vibe th
 * The scissors are red as a contrast to the other icons and keeps with the simple design of the other icons.
 * The lizard is green to represtent the most common colour to make a lizard. It's icon is a dragon to keep with the fun atmosphere of the game.
 * Spock is blue to match his uniform in Star-Trek. He is represented by the vulcan hand sybol that is often associated with him.
+
 ![images of the icons used](assets/images/readme/icons.jpg)
 
 -__Rules Section__
@@ -196,4 +197,34 @@ On all the devices I tested wether the game ran correctly. It was tested on diff
 -__Validator Testing__
 The HTML and CSS was ran though the W3C Code validator, both with no issues.
 The Javascript was ran though a linter. It has some warnings which have been checked.
+All the text colours passed a contrast checker for legibility.
 
+-__Performace Testing__
+The performance testing for the site was ran through Lighthouse on Google Dev-tools.
+![Google dev tools lighthouse result](assets/images/readme/googleLighthouse.jpg)
+
+## Deployment
+The site was deployed to GitHub pages. The steps to do this are:
+* In the GitHub repository, go to settings.
+* Navigate to pages.
+* Switch the branch to "main".
+* The page will refresh and show a successful deployment.
+The live link is: https://jamie-s2000.github.io/rock-paper-scissors/
+
+## Languages
+The languages used are HTML, CSS and JavaScript.
+
+## Software
+
+Visual Studio Code was used to create and push the code to GitHub.
+
+Git was used for version control.
+
+## Media
+All icons were taken from https://fontawsome.com
+
+* Rock: https://fontawesome.com/icons/hill-rockslide?f=classic&s=solid
+* Paper: https://fontawesome.com/icons/paper-plane?f=classic&s=solid
+* Scissors: https://fontawesome.com/icons/scissors?f=classic&s=solid
+* Lizard: https://fontawesome.com/icons/dragon?f=classic&s=solid
+* Spock: https://fontawesome.com/icons/hand-spock?f=classic&s=solid
