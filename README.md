@@ -109,24 +109,18 @@ function gameReset() {
     let gameCount = winsTotal + loseTotal + drawTotal;
     if (gameCount >= 9) {
         if (winsTotal == loseTotal) {
-            alert(`
-            You won ${winsTotal} times.
-            You lost ${loseTotal} times.
-            You drew ${drawTotal} times
-            Draw!`)
+            var result = "draw"
         } else if (winsTotal > loseTotal) {
-            alert(`
-            You won ${winsTotal} times.
-            You lost ${loseTotal} times.
-            You drew ${drawTotal} times
-            You win!`)
+            var result = "win"
         } else if (winsTotal < loseTotal) {
-            alert(`
-            You won ${winsTotal} times.
-            You lost ${loseTotal} times.
-            You drew ${drawTotal} times
-            You lose!`)
+            var result = "lose"
         }
+        alert(`
+        You won ${winsTotal} times.
+        You lost ${loseTotal} times.
+        You drew ${drawTotal} times
+        You ${result}!
+        `)
     document.getElementById("wins-total").innerHTML = 0
     document.getElementById("lose-total").innerHTML = 0
     document.getElementById("draws-total").innerHTML = 0
@@ -170,15 +164,16 @@ document.addEventListener("DOMContentLoaded", function (){
 
     for (let button of buttons) {
         button.addEventListener("click", function(){
-            if (this.getAttribute("id") === "rock") {
+            let userChoice = this.getAttribute("id")
+            if (userChoice === "rock") {
                 rockPick();
-            } else if (this.getAttribute("id") === "paper") {
+            } else if (userChoice === "paper") {
                 paperPick();
-            } else if (this.getAttribute("id") === "scissors") {
+            } else if (userChoice === "scissors") {
                 scissorsPick();
-            } else if (this.getAttribute("id") === "lizard") {
+            } else if (userChoice === "lizard") {
                 lizardPick();
-            } else if (this.getAttribute("id") === "spock") {
+            } else if (userChoice === "spock") {
                 spockPick();
             }
             gameReset();
