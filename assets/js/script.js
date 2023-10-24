@@ -107,3 +107,23 @@ function spockPick() {
         loseCount();
     }
 }
+
+document.addEventListener("DOMContentLoaded", function (){
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons) {
+        button.addEventListener("click", function(){
+            if (this.getAttribute("id") === "rock") {
+                rockPick();
+            } else if (this.getAttribute("id") === "paper") {
+                paperPick();
+            } else if (this.getAttribute("id") === "scissors") {
+                scissorsPick();
+            } else if (this.getAttribute("id") === "lizard") {
+                lizardPick();
+            } else if (this.getAttribute("id") === "spock") {
+                spockPick();
+            }
+        })
+    }
+})
