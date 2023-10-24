@@ -33,6 +33,9 @@ function drawCount() {
     document.getElementById("draws-total").innerHTML = ++drawTotal;
 }
 
+/**
+ * restes game after 9 tries
+ */
 function gameReset() {
     let winsTotal = parseInt(document.getElementById("wins-total").innerText);
     let loseTotal = parseInt(document.getElementById("lose-total").innerText);
