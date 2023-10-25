@@ -7,7 +7,7 @@ The project uses Javascript to be fully interactive, keep score and to be able t
 ## Planning and Development
 - __Target Audience__
 * The target audience is anyone who wants to play a game of Rock, Paper, Scissors, Lizard, Spock.
-* It is also people are interested in how javascript can be used to make an interactive site.
+* It is also for people are interested in how javascript can be used to make an interactive site.
 
 - __Site Objectives__
 * To create a fun and interactive game.
@@ -20,6 +20,7 @@ The project uses Javascript to be fully interactive, keep score and to be able t
 * For the site to be accessible.
 
 - __Colour Scheme__
+
 The colours were chosen to distinguish between different aspects of the game.
 * The background colour was used to separate different areas of the game.
 * The icon colours were chosen to help to distinguish between each icon.
