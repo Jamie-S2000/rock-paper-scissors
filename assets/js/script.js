@@ -1,8 +1,8 @@
 /**
  * computer choices and function to choose randomly
  */
-let options = ["rock", "paper", "scissors", "lizard", "Spock"];
 function computerChoice() {
+    let options = ["rock", "paper", "scissors", "lizard", "Spock"];
     i = Math.floor(Math.random() * 5);
     let compChoice = options[i];
     return compChoice;
