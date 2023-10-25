@@ -1,7 +1,7 @@
 /**
  * computer choices and function to choose randomly
  */
-let options = ["rock", "paper", "scissors", "lizard", "Spock"]
+let options = ["rock", "paper", "scissors", "lizard", "Spock"];
 function computerChoice() {
     i = Math.floor(Math.random() * 5);
     let compChoice = options[i];
@@ -42,21 +42,21 @@ function gameReset() {
     let gameCount = winsTotal + loseTotal + drawTotal;
     if (gameCount >= 9) {
         if (winsTotal == loseTotal) {
-            var result = "draw"
+            var result = "draw";
         } else if (winsTotal > loseTotal) {
-            var result = "win"
+            var result = "win";
         } else if (winsTotal < loseTotal) {
-            var result = "lose"
+            var result = "lose";
         }
         alert(`
         You won ${winsTotal} times.
         You lost ${loseTotal} times.
         You drew ${drawTotal} times
         You ${result}!
-        `)
-    document.getElementById("wins-total").innerHTML = 0
-    document.getElementById("lose-total").innerHTML = 0
-    document.getElementById("draws-total").innerHTML = 0
+        `);
+    document.getElementById("wins-total").innerHTML = 0;
+    document.getElementById("lose-total").innerHTML = 0;
+    document.getElementById("draws-total").innerHTML = 0;
     }
 }
 
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
     for (let button of buttons) {
         button.addEventListener("click", function(){
-            let userChoice = this.getAttribute("id")
+            let userChoice = this.getAttribute("id");
             if (userChoice === "rock") {
                 rockPick();
             } else if (userChoice === "paper") {
@@ -152,6 +152,6 @@ document.addEventListener("DOMContentLoaded", function (){
                 spockPick();
             }
             gameReset();
-        })
+        });
     }
-})
+});
