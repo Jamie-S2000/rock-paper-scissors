@@ -215,8 +215,11 @@ The site was tested on these devices:
 * Samsung Galaxy S23 Ultra - Chrome, Samsung Internet
 * iPad Air - Safari
 * iPhone 13 - Safari
+* 
 Google Dev tools were used throughout to test responsiveness. This was also used to check the Javascript code was working through the console.
+
 -__Testing the Game__
+
 On all the devices I tested whether the game ran correctly. It was tested on different browsers and different-sized screens to check the game functioned properly and the sizing of everything worked.
 
 -__Validator Testing__
@@ -241,7 +244,7 @@ When loading the game, the rockPick() function would run itself. To fix this iss
 ```
 document.addEventListener("DOMContentLoaded", function ()...
 ```
-This stopped the code from running without being picked and resolved the issue.
+This stopped the code from running on load and without being picked and resolved the issue.
 
 ## Deployment
 The site was deployed to GitHub pages. The steps to do this are:
