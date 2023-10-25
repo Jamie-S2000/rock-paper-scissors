@@ -138,7 +138,7 @@ function gameReset() {
             var result = "draw";
         } else if (winsTotal > loseTotal) {
             var result = "win";
-        } else if (winsTotal < loseTotal) {
+        } else /*winsTotal < loseTotal*/{
             var result = "lose";
         }
         alert(`
@@ -169,7 +169,7 @@ function rockPick() {
     } else if (compChoice === "scissors" || compChoice ===  "lizard"){
         alert(`You chose rock. The computer chose ${compChoice}. You Win!`);
         winCount();
-    } else if (compChoice === "paper" || compChoice ===  "spock"){
+    } else /*compChoice = "paper" or "spock"*/{
         alert(`You chose rock. The computer chose ${compChoice}. You lose.`);
         loseCount();
     }
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function (){
                 scissorsPick();
             } else if (userChoice === "lizard") {
                 lizardPick();
-            } else if (userChoice === "spock") {
+            } else /*userChoice = "spock"*/ {
                 spockPick();
             }
             gameReset();
