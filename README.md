@@ -73,13 +73,13 @@ In this section i will show and explain the code used to make the site interacti
 
 ### Computer choice
 This function was built for the computer to randomly choose one of the options.
-* Defines the options in an array outside the function.
+* Defines the options array.
 * picks a random number from 0 to 4 by multiplying 5 by a number between 0 and 1 then rounding down. This is given the variable i.
 * The compChoice veriable is set by finding where i sits in the options array e.g. if i = 3 then the compChoice is lizard.
 * The function returns the choice.
 ```
-let options = ["rock", "paper", "scissors", "lizard", "Spock"]
 function computerChoice() {
+    let options = ["rock", "paper", "scissors", "lizard", "Spock"];
     i = Math.floor(Math.random() * 5);
     let compChoice = options[i];
     return compChoice;
@@ -113,21 +113,21 @@ function gameReset() {
     let gameCount = winsTotal + loseTotal + drawTotal;
     if (gameCount >= 9) {
         if (winsTotal == loseTotal) {
-            var result = "draw"
+            var result = "draw";
         } else if (winsTotal > loseTotal) {
-            var result = "win"
+            var result = "win";
         } else if (winsTotal < loseTotal) {
-            var result = "lose"
+            var result = "lose";
         }
         alert(`
         You won ${winsTotal} times.
         You lost ${loseTotal} times.
         You drew ${drawTotal} times
         You ${result}!
-        `)
-    document.getElementById("wins-total").innerHTML = 0
-    document.getElementById("lose-total").innerHTML = 0
-    document.getElementById("draws-total").innerHTML = 0
+        `);
+    document.getElementById("wins-total").innerHTML = 0;
+    document.getElementById("lose-total").innerHTML = 0;
+    document.getElementById("draws-total").innerHTML = 0;
     }
 }
 ```
@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function (){
 
     for (let button of buttons) {
         button.addEventListener("click", function(){
-            let userChoice = this.getAttribute("id")
+            let userChoice = this.getAttribute("id");
             if (userChoice === "rock") {
                 rockPick();
             } else if (userChoice === "paper") {
@@ -181,9 +181,9 @@ document.addEventListener("DOMContentLoaded", function (){
                 spockPick();
             }
             gameReset();
-        })
+        });
     }
-})
+});
 ```
 
 ## Testing
