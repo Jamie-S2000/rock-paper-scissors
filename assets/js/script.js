@@ -45,7 +45,7 @@ function gameReset() {
             var result = "draw";
         } else if (winsTotal > loseTotal) {
             var result = "win";
-        } else if (winsTotal < loseTotal) {
+        } else /*winsTotal < loseTotal*/{
             var result = "lose";
         }
         alert(`
