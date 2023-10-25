@@ -78,7 +78,7 @@ In this section, I will show and explain the code used to make the site interact
 ### Computer choice
 This function was built for the computer to randomly choose one of the options.
 * Defines the options array.
-* picks a random number from 0 to 4 by multiplying 5 by a number between 0 and 1 then rounding down. This is given the variable i.
+* picks a random number from 0 to 4 by multiplying 5 by a random number between 0 and 1 then rounding down. This is assigned to the variable i.
 * The compChoice variable is set by finding where i sits in the options array e.g. if i = 3 then the compChoice is lizard.
 * The function returns the choice.
 ```
@@ -91,16 +91,34 @@ function computerChoice() {
 ```
 
 ### Iterating totals
-This function was built to add 1 to the total based on whether the user won, lost, or drew.
+This function was built to add 1 to the relevant total based on whether the user won, lost, or drew.
 * The function gets the current total from the HTML and assigns it an integer.
 * The function then replaces the current total with the total +1.
 ```
+/**
+ * iterate Wins
+ */
 function winCount() {
     let winsTotal = parseInt(document.getElementById("wins-total").innerText);
     document.getElementById("wins-total").innerHTML = ++winsTotal;
 }
+
+/**
+ * iterate lose
+ */
+function loseCount() {
+    let loseTotal = parseInt(document.getElementById("lose-total").innerText);
+    document.getElementById("lose-total").innerHTML = ++loseTotal;
+}
+
+/**
+ * iterate draw
+ */
+function drawCount() {
+    let drawTotal = parseInt(document.getElementById("draws-total").innerText);
+    document.getElementById("draws-total").innerHTML = ++drawTotal;
+}
 ```
-The loseCount() and drawCount() work the same for their respective totals.
 
 ### Game Reset
 The game reset function is used to make sure the game is won. It is set to trigger when 9 games have been played.
