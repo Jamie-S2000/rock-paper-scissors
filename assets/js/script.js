@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function (){
                 scissorsPick();
             } else if (userChoice === "lizard") {
                 lizardPick();
-            } else if (userChoice === "spock") {
+            } else /*userChoice = "spock"*/ {
                 spockPick();
             }
             gameReset();
