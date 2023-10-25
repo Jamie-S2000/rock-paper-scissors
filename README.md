@@ -121,10 +121,10 @@ function drawCount() {
 ```
 
 ### Game Reset
-The game reset function is used to make sure the game is won. It is set to trigger when 9 games have been played.
+The game reset function is used to en the game. It is set to trigger when 9 games have been played.
 * The function collects each total from wins, losses and draws and assigns them integers.
 * It then adds the totals together.
-* The function checks if the amount of points is 9 or greater, if it is then the rest of the function is ran, if not then the game continues as normal.
+* The function checks if the amount of points is 9 or greater, if it is then the rest of the function is run, if not then the game continues as normal.
 * If the number of games played is 9 or more, the function alerts the user of how many games they won, lost and have drawn. It compares the win total with the loss total and from this chooses whether to tell the user if they won, lost or drew.
 * After this it resets the win, lose, and draw totals back to 0 to start the game again.
 ```
