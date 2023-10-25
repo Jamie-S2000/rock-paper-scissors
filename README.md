@@ -199,7 +199,15 @@ On all the devices I tested wether the game ran correctly. It was tested on diff
 
 -__Validator Testing__
 The HTML and CSS was ran though the W3C Code validator, both with no issues.
-The Javascript was ran though a linter. It has some warnings which have been checked.
+The Javascript was ran though a jshint.com. It returned:
+* There are 12 functions in this file.
+* Function with the largest signature take 0 arguments, while the median is 0.
+* Largest function has 13 statements in it, while the median is 8.
+* The most complex function has a cyclomatic complexity value of 6 while the median is 5.5.
+* There were 4 warnings:
+  * "'result' is already defined." in lines 47 and 49. Result is supposed to be redefined with the function so this is fine.
+  * "'result' used out of scope." in line 55. This works with result being defined in the if function just before.
+  * Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (rockPick, paperPick, scissorsPick, lizardPick, spockPick, gameReset). All variables have unique names. When they are the same they are equal in different funcions. This will help to stop any confusion.
 All the text colours passed a contrast checker for legibility.
 
 -__Performace Testing__
