@@ -35,13 +35,14 @@ The fonts are taken from Google fonts and were chosen to reflect the fun vibe th
 -__Win/Lose/Draw counter__
 * The win/lose/draw counter counts the score of the player and shows where they are in the game.
 * It resets itself after every 9 games allowing players to know if they win or lose.
+
 ![image of the win/lose/draw counter](assets/images/readme/win-lose-draw-counter.jpg)
 
 -__Interactive Icons__
 * The icons are taken from Fontawsome.com (links to each icon are provided in the media section)
 * Being a game the icons are kept in a cartoon style and as simple but fun icons to compliment the game's aims.
 * The rock icon is a small rock slide with the colour to represent rocks.
-* The paper is yellow to contrast with the other icons. It is also yellow as white did not contract well with the chosen grey background. It is a paper plane to keep with the fun style of the game.
+* The paper is yellow to contrast with the other icons. It is also yellow as white did not contrast well with the chosen grey background. It is a paper plane to keep with the fun style of the game.
 * The scissors are red as a contrast to the other icons and keep with the simple design of the other icons.
 * The lizard is green to represent the most common colour to make a lizard. Its icon is a dragon to keep with the fun atmosphere of the game.
 * Spock is blue to match his uniform in Star Trek. He is represented by the Vulcan hand symbol that is often associated with him.
@@ -54,13 +55,15 @@ The fonts are taken from Google fonts and were chosen to reflect the fun vibe th
 ![image of the rules section](assets/images/readme/rules.jpg)
 
 -__Alerts__
+
 There are two types of alerts in the game:
 * The first type tells players what they chose, what the computer chose and if they won, lost or drew.
 ![image of the first type of alert](assets/images/readme/alert1.jpg)
-* The second type shows users their points total at the end of a game and whether they won lost or drew overall.
+* The second type shows users their points total at the end of a game and whether they won, lost or drew overall.
 ![image of the second type of alert](assets/images/readme/alert2.jpg)
 
 -__Favicon__
+
 The favicon is chosen as it is a video game controller.
 
 ### Future Features and Improvements
