@@ -230,7 +230,7 @@ The Javascript was run through jshint.com. It returned:
 * The largest function has 13 statements in it, while the median is 8.
 * The most complex function has a cyclomatic complexity value of 6 while the median is 5.5.
 * There were 4 warnings:
-  * "'result' is already defined." in lines 47 and 49. The result is supposed to be redefined with the function so this is fine.
+  * "'result' is already defined." in lines 47 and 49. The result is supposed to be redefined within the function and is only defined internally.
   * "'result' used out of scope." in line 55. This works with the result being defined in the if function just before.
   * Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. (rockPick, paperPick, scissorsPick, lizardPick, spockPick, gameReset). All variables have unique names. When they are the same they are equal in different functions. This will help to stop any confusion.
 All the text colours passed a contrast checker for legibility.
