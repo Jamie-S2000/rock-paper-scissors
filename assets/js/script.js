@@ -69,7 +69,7 @@ function rockPick() {
     } else if (compChoice === "scissors" || compChoice ===  "lizard"){
         alert(`You chose rock. The computer chose ${compChoice}. You Win!`);
         winCount();
-    } else if (compChoice === "paper" || compChoice ===  "spock"){
+    } else /*compChoice = "paper" or "spock"*/{
         alert(`You chose rock. The computer chose ${compChoice}. You lose.`);
         loseCount();
     }
@@ -83,7 +83,7 @@ function paperPick() {
     } else if (compChoice === "rock" || compChoice ===  "spock"){
         alert(`You chose paper. The computer chose ${compChoice}. You Win!`);
         winCount();
-    } else if (compChoice === "scissors" || compChoice ===  "lizard"){
+    } else /*compChoice = "scissors" or "lizard"*/{
         alert(`You chose paper. The computer chose ${compChoice}. You lose.`);
         loseCount();
     }
@@ -97,7 +97,7 @@ function scissorsPick() {
     } else if (compChoice === "paper" || compChoice ===  "lizard"){
         alert(`You chose scissors. The computer chose ${compChoice}. You Win!`);
         winCount();
-    } else if (compChoice === "spock" || compChoice ===  "rock"){
+    } else /*compChoice = "spock" or "rock"*/{
         alert(`You chose scissors. The computer chose ${compChoice}. You lose.`);
         loseCount();
     }
@@ -111,7 +111,7 @@ function lizardPick() {
     } else if (compChoice === "spock" || compChoice ===  "paper"){
         alert(`You chose lizard. The computer chose ${compChoice}. You Win!`);
         winCount();
-    } else if (compChoice === "rock" || compChoice ===  "scissors"){
+    } else /*compChoice = "rock" or "scissors")*/{
         alert(`You chose lizard. The computer chose ${compChoice}. You lose.`);
         loseCount();
     }
@@ -125,7 +125,7 @@ function spockPick() {
     } else if (compChoice === "scissors" || compChoice ===  "rock"){
         alert(`You chose Spock. The computer chose ${compChoice}. You Win!`);
         winCount();
-    } else if (compChoice === "paper" || compChoice ===  "lizard"){
+    } else /*compChoice = "paper" or "lizard"*/{
         alert(`You chose Spock. The computer chose ${compChoice}. You lose.`);
         loseCount();
     }
