@@ -214,6 +214,13 @@ All the text colours passed a contrast checker for legibility.
 The performance testing for the site was run through Lighthouse on Google Dev tools.
 ![Google dev tools lighthouse result](assets/images/readme/googleLighthouse.jpg)
 
+## Issues
+When loading the game, the rockPick() function would run itself. To fix this issue I added the event listener:
+```
+document.addEventListener("DOMContentLoaded", function ()...
+```
+This stopped the code from running without being picked and resolved the issue.
+
 ## Deployment
 The site was deployed to GitHub pages. The steps to do this are:
 * In the GitHub repository, go to settings.
